@@ -4,22 +4,21 @@ function Favorites() {
   return (
     <>
         <div class="mt-5">
-            {/* <h1>Your Matches</h1> */}
             <h3>Favorites</h3>
             <div class="row">
                 <div class="col-sm-3 mb-3 mb-sm-0">
                     <div class="card">
-                        <img src="public/profile-images/girl.png" alt="" />
+                        <img src="/profile-images/girl.png" alt="" />
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img src="public/profile-images/man.png" alt="" />
+                        <img src="/profile-images/man.png" alt="" />
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
-                        <img src="public/profile-images/woman.png" alt="" />
+                        <img src="/profile-images/woman.png" alt="" />
                     </div>
                 </div>
             </div>
