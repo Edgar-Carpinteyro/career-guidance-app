@@ -1,11 +1,19 @@
+.navbar{
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 15px 15px 40px 40px;
+}
+
 .navbar,
 .navbar > ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  background-color:rgb(250, 215, 18);
+  width: 60vw;
+  background-color: rgba(217, 217, 217, 0.10);
+
+
 }
 
 .navbar > ul {
@@ -15,17 +23,17 @@
 
 .navbar-toggler{
   color: rgb(243 242 242 / 97%);
-  background-color: #ffc70a;
+  background-color: rgba(217, 217, 217, 0.10);
 }
 
-.link {
+/* .link {
   text-decoration: none;
   color: rgb(0, 105, 197);
   padding: 10px;
-}
+} */
 
-.link:hover{
+/* .link:hover{
   background-color: rgb(3, 75, 255);
   opacity: 0.8;
   color: yellow;
-}
+} */

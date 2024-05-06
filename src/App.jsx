@@ -1,17 +1,15 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Favorites from './components/favorites'
-import TopMatches from './components/top-matches'
-import UploadPage from './components/upload-page'
-import ProfilePage from './components/profile-page'
+import Home from "./components/home";
+import Mentor from "./components/mentor";
+import UploadPage from "./components/upload-page";
 import "./components/styles/navbar.css"
 import './App.css'
 
 function App() {
   const Navbar = () => {
     return (
-      <nav className="navbar navbar-expand-lg fixed-top">
-        
-        
+      <nav className="navbar navbar-expand-lg fixed-bottom">
+               
         <button
           className="navbar-toggler"
           type="button"
@@ -27,22 +25,17 @@ function App() {
         <ul className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <li>
             <Link className="link" to="/">
-              <b>Home</b>
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/matches">
-              <b>Top Matches</b>
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/favorites">
-              <b>Favorites</b>
+              <img src="/profile-images/user-icon.svg" alt="" />
             </Link>
           </li>
           <li>
             <Link className="link" to="/upload">
-              <b>Upload</b>
+              <img src="/profile-images/cloud-icon.svg" alt="" />
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/mentor">
+              <img src="/profile-images/mentor-icon.svg" alt="" />
             </Link>
           </li>
         </ul>
@@ -53,14 +46,12 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
-      
         <Routes>
-          <Route path="/" element={<ProfilePage />} />
-          <Route path="/matches" element={<TopMatches />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/" element={<Home />} />
           <Route path="/upload" element={<UploadPage />} />
+          <Route path="/mentor" element={<Mentor />} />
         </Routes>
+        <Navbar />
       </Router>
     </>
   );
@@ -68,19 +59,3 @@ function App() {
 
 export default App;
 
-
-// function App() {
-  
-
-//   return (
-//     <>
-//       < Favorites/>
-//       < TopMatches />
-//       < UploadPage />
-//       < ProfilePage />
-
-//     </>
-//   )
-// }
-
-// export default App
